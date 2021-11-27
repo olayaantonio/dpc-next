@@ -1,23 +1,55 @@
-# Redux Toolkit TypeScript Example
+# DPC Next Boilerplate Project
 
-This example shows how to integrate Next.js with [Redux Toolkit](https://redux-toolkit.js.org).
+This is the beginning of a boilerplate for react projects
 
-The **Redux Toolkit** is a standardized way to write Redux logic (create actions and reducers, setup the store with some default middlewares like redux devtools extension). This example demonstrates each of these features with Next.js
+## Tech Stack so far
 
-## Deploy your own
+### - **NextJS** (https://nextjs.org)
+Main react framework. Routing and SSR and misc utilities. 
+### - **Redux Toolkit** (https://redux-toolkit.js.org)
+Global state management. Includes Redux Thunk out of the box for asynchronous actions
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+### - **Mock Service Worker (MSW)** (https://mswjs.io/)
+Mock API using service worker. Works both in the client and on the server.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-redux&project-name=with-redux&repository-name=with-redux)
+### - **Tailwind CSS** (https://tailwindcss.com/)
+Fast styling using JIT stylesheet generation
 
-## How to use
+### - **React Testing Library** (https://testing-library.com/react)
+Component unit testing
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
 
-```bash
-npx create-next-app --example with-redux with-redux-app
-# or
-yarn create next-app --example with-redux with-redux-app
+## Demo application
+
+A simple e-commerce web application. 
+
+* / - Home page
+* /products/prodcuts_dynamic - Product list 
+* /products/prodcuts_static - Product list 
+* /products/[id] - Product detail page (statically generated)
+
+### To start in development mode
+```
+yarn dev
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## TODO
+
+- UI Component Library
+- Storybook
+- E2E Testing. Playwrite?
+- Monorepo support
+- Flesh out the demo application
+- etc...
+
+## Commands run when creating boilerplate
+```
+yarn create next-app --example with-redux dpc-next
+cd dpc-next
+yarn add msw
+npx msw init
+yarn next lint (selecting strictyarn )
+yarn remove eslint && yarn add --dev eslint@"<8.0.0"
+yarn add -D tailwindcss autoprefixer postcss
+```
+
