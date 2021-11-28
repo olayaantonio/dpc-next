@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import { Html, Head, Main, NextScript } from 'next/document'
 
 const Document = () => (
   <Html className="bg-gray-200 p-2">
@@ -8,6 +8,6 @@ const Document = () => (
       <NextScript />
     </body>
   </Html>
-);
+)
 
-export default Document;
+export default Document

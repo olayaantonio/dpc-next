@@ -1,23 +1,23 @@
-import type { NextPage } from "next";
+import type { NextPage } from 'next'
 
-import React, { useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "../../store";
+import React, { useEffect } from 'react'
+import { useAppDispatch, useAppSelector } from '../../store'
 import {
   loadProducts,
   selectProducts,
-} from "../../store/products/productsSlice";
-import { ProductList } from "../../components/products/ProductList";
+} from '../../store/products/productsSlice'
+import { ProductList } from '../../components/products/ProductList'
 
 const DynamicProductsPage: NextPage = () => {
-  const dispatch = useAppDispatch();
-  const { products, status } = useAppSelector(selectProducts);
+  const dispatch = useAppDispatch()
+  const { products, status } = useAppSelector(selectProducts)
 
   useEffect(() => {
-    dispatch(loadProducts());
-  }, [dispatch]);
+    dispatch(loadProducts())
+  }, [dispatch])
 
-  if (!status || status === "loading") return <div>Loading...</div>;
-  if (status === "failed") return <div>Could not load products!</div>;
+  if (!status || status === 'loading') return <div>Loading...</div>
+  if (status === 'failed') return <div>Could not load products!</div>
 
   return (
     <div>
@@ -28,7 +28,7 @@ const DynamicProductsPage: NextPage = () => {
       </p>
       <ProductList products={products} />
     </div>
-  );
-};
+  )
+}
 
-export default DynamicProductsPage;
+export default DynamicProductsPage

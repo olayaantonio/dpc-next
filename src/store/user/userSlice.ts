@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-export const cartSlice = createSlice({
-  name: 'cart',
+export const userSlice = createSlice({
+  name: 'user',
   initialState: null,
   // The `reducers` field lets us define reducers and generate associated actions
   reducers: {},

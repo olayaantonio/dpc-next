@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-import { IProduct } from "../../types/product";
+import { IProduct } from '../../types/product'
 
 export const ProductDetails = ({ product }: { product: IProduct }) => {
   return (
@@ -8,5 +8,5 @@ export const ProductDetails = ({ product }: { product: IProduct }) => {
       <h1>{product.title}</h1>
       <span>ID:{product.id}</span>
     </div>
-  );
-};
+  )
+}

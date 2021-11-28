@@ -1,9 +1,9 @@
-import type { NextPage } from "next";
-import React from "react";
+import type { NextPage } from 'next'
+import React from 'react'
 
-import { fetchProducts } from "../../api/products";
-import { ProductList } from "../../components/products/ProductList";
-import { IProduct } from "../../types/product";
+import { fetchProducts } from '../../api/products'
+import { ProductList } from '../../components/products/ProductList'
+import { IProduct } from '../../types/product'
 
 const StaticProductsPage: NextPage<{ products: IProduct[] }> = ({
   products,
@@ -14,8 +14,8 @@ const StaticProductsPage: NextPage<{ products: IProduct[] }> = ({
       <p>Page is prerendered on the server with data</p>
       <ProductList products={products} />
     </div>
-  );
-};
+  )
+}
 
 //-----------------------------------------------------
 // This function only run ond the server at build time
@@ -23,8 +23,8 @@ const StaticProductsPage: NextPage<{ products: IProduct[] }> = ({
 // page as props
 // -----------------------------------------------------
 export async function getStaticProps() {
-  const products = await fetchProducts();
-  return { props: { products } };
+  const products = await fetchProducts()
+  return { props: { products } }
 }
 
-export default StaticProductsPage;
+export default StaticProductsPage

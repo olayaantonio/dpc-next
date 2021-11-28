@@ -3,6 +3,6 @@
  * Add handlers for more mocked APIs below
  */
 
-import productMockHandlers from "../products/mocks/mockHandlers";
+import productMockHandlers from '../products/mocks/mockHandlers'
 
-export const handlers = [...productMockHandlers];
+export const handlers = [...productMockHandlers]

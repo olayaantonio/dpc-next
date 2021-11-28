@@ -1,8 +1,8 @@
-if (typeof window !== "undefined") {
-  const { worker } = require("./browser");
-  worker.start();
+if (typeof window !== 'undefined') {
+  const { worker } = require('./browser')
+  worker.start()
 } else {
-  const { server } = require("./server");
-  server.listen();
+  const { server } = require('./server')
+  server.listen()
 }
-export {}; // needed by TS
+export {} // needed by TS
