@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
 import React from 'react'
 
-import { fetchProducts } from '../../api/products'
-import { ProductList } from '../../components/products/ProductList'
-import { IProduct } from '../../types/product'
+import { fetchProducts } from 'api/products'
+import { ProductList } from 'containers/products/ProductList'
+import { IProduct } from 'types/product'
 
 const StaticProductsPage: NextPage<{ products: IProduct[] }> = ({
   products,
