@@ -55,10 +55,30 @@ A simple e-commerce web application.
 
 ---
 
-## To start in development mode
+## Installation and starting development server
 
 ```
+git clone https://github.com/dpc-nordics/dpc-next
+cd dpc-next
+yarn install
 yarn dev
+```
+
+## To build and run optimised build
+
+```
+yarn build
+yarn start
+```
+
+---
+
+## Mock API
+
+To use the mocked API. Make sure that this environment flag is set in relevant .env file
+
+```
+NEXT_PUBLIC_API_MOCKING_ENABLED="1"
 ```
 
 ---
