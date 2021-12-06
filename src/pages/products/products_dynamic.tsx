@@ -3,7 +3,7 @@ import type { NextPage } from 'next'
 import React, { useEffect } from 'react'
 import { useAppDispatch, useAppSelector } from 'store'
 import { loadProducts, selectProducts } from 'store/products/productsSlice'
-import { ProductList } from 'containers/products/ProductList'
+import { ProductList } from 'ui/features/products/ProductList'
 
 const DynamicProductsPage: NextPage = () => {
   const dispatch = useAppDispatch()
