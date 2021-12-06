@@ -7,13 +7,7 @@ import { mockProducts } from '../../api/products/mocks/mockProducts'
 
 describe('<ProductDetails />', () => {
   it('renders the first product', () => {
-    const store = makeStore()
-
-    render(
-      <Provider store={store}>
-        <ProductDetails product={mockProducts[0]} />
-      </Provider>,
-    )
+    render(<ProductDetails product={mockProducts[0]} />)
 
     expect(screen.getByText(/Fjallraven/)).toBeInTheDocument()
   })

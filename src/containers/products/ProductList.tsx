@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { IProduct } from '../../types/product'
+import { IProduct } from 'types/product'
 
 export const ProductList = ({ products }: { products: IProduct[] }) => {
   return (
