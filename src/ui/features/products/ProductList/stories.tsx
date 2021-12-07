@@ -1,8 +1,8 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import { ProductList } from './ProductList'
-import { mockProducts } from '../../../api/products/mocks/mockProducts'
+import { ProductList } from '.'
+import { mockProducts } from 'api/products/mocks/mockProducts'
 
 console.log(mockProducts)
 

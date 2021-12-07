@@ -1,8 +1,8 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import { ProductDetails } from './ProductDetails'
-import { mockProducts } from '../../../api/products/mocks/mockProducts'
+import { ProductDetails } from '.'
+import { mockProducts } from '../../../../api/products/mocks/mockProducts'
 
 export default {
   title: 'Products/ProductDetails',

@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react'
 import { Provider } from 'react-redux'
 
 import { makeStore } from 'store'
-import { ProductList } from './ProductList'
+import { ProductList } from '.'
 import { mockProducts } from 'api/products/mocks/mockProducts'
 
 describe('<ProductList />', () => {

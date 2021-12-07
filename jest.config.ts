@@ -12,6 +12,7 @@ const config: InitialOptionsTsJest = {
       tsconfig: 'tsconfig.test.json',
     },
   },
+  modulePaths: ['<rootDir>/src'],
 }
 
 export default config
