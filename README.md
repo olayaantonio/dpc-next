@@ -26,6 +26,10 @@ Fast styling using JIT stylesheet generation
 
 Component unit testing
 
+### - **Storybook** (https://storybook.js.org/)
+
+Component development and testing environment
+
 ---
 
 ## Source code structure
@@ -55,16 +59,29 @@ A simple e-commerce web application.
 
 ---
 
-## Installation and starting development server
+## Installation & usage
+
+### Install repository
 
 ```
 git clone https://github.com/dpc-nordics/dpc-next
 cd dpc-next
 yarn install
+```
+
+### Run development server
+
+```
 yarn dev
 ```
 
-## To build and run optimised build
+### Run storybook development server
+
+```
+yarn storybook
+```
+
+### To build and run optimised build
 
 ```
 yarn build
