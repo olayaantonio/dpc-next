@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import React from 'react'
+
 import { fetchProducts, fetchProduct } from 'api/products'
 import { IProduct } from 'types/product'
-
-import { ProductDetails } from 'containers/products/ProductDetails'
+import { ProductDetails } from 'ui/features/products/ProductDetails'
 
 const ProductPage: NextPage<{ product: IProduct }> = ({ product }) => {
   return (
