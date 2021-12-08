@@ -6,27 +6,31 @@ This is the beginning of a boilerplate for react projects
 
 ## Tech Stack so far
 
-### - **NextJS** (https://nextjs.org)
+### **NextJS** - https://nextjs.org
 
 Main react framework. Routing and SSR and misc utilities.
 
-### - **Redux Toolkit** (https://redux-toolkit.js.org)
+### **Redux Toolkit** - https://redux-toolkit.js.org
 
 Global state management. Includes Redux Thunk out of the box for asynchronous actions
 
-### - **Mock Service Worker (MSW)** (https://mswjs.io/)
+### **Mock Service Worker (MSW)** - https://mswjs.io
 
 Mock API using service worker. Works both in the client and on the server.
 
-### - **Tailwind CSS** (https://tailwindcss.com/)
+### **Tailwind CSS** - https://tailwindcss.com
 
 Fast styling using JIT stylesheet generation
 
-### - **React Testing Library** (https://testing-library.com/react)
+#### **Hero Icons** - https://heroicons.com
+
+React SVG Icons
+
+### **React Testing Library** - https://testing-library.com/react
 
 Component unit testing
 
-### - **Storybook** (https://storybook.js.org/)
+### **Storybook** - https://storybook.js.org
 
 Component development and testing environment
 

@@ -1,7 +1,7 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
 const Document = () => (
-  <Html className="bg-gray-200 p-2">
+  <Html className="bg-white">
     <Head />
     <body>
       <Main />

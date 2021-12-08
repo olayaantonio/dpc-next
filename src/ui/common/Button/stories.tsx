@@ -1,5 +1,6 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
+import { ShoppingCartIcon } from '@heroicons/react/outline'
 
 import { Button } from '.'
 
@@ -38,4 +39,10 @@ export const Small = Template.bind({})
 Small.args = {
   size: 'small',
   label: 'Button',
+}
+
+export const WithIcon = Template.bind({})
+WithIcon.args = {
+  icon: <ShoppingCartIcon className="-ml-1 mr-2 h-5 w-5" />,
+  label: 'Add to cart',
 }
