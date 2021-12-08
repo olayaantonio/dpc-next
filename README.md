@@ -1,6 +1,8 @@
 # DPC Next Boilerplate Project
 
-This is the beginning of a boilerplate for react projects
+This is the beginning of a boilerplate for react projects. 
+
+Demo application available at https://dpc-next.vercel.app
 
 ---
 
