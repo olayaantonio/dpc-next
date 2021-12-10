@@ -3,10 +3,11 @@
     "dsznajder.es7-react-js-snippets",
     "dbaeumer.vscode-eslint",
     "formulahendry.auto-rename-tag",
-    "coenraads.bracket-pair-colorizer",
     "eamodio.gitlens",
     "wix.vscode-import-cost",
     "esbenp.prettier-vscode",
-    "bradlc.vscode-tailwindcss"
+    "bradlc.vscode-tailwindcss",
+    "streetsidesoftware.code-spell-checker",
+    "github.vscode-pull-request-github"
   ]
 }
