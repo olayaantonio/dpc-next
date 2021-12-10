@@ -18,6 +18,7 @@ interface ButtonProps {
    */
   onClick?: () => void
   icon?: React.ReactNode
+  className?: string
 }
 
 export const Button = ({
@@ -25,6 +26,7 @@ export const Button = ({
   size = 'medium',
   label,
   icon = null,
+  className = '',
   ...props
 }: ButtonProps) => {
   const primaryClass = primary
@@ -41,7 +43,12 @@ export const Button = ({
   return (
     <button
       type="button"
-      className={`${primaryClass} ${sizeClass} font-medium inline-flex items-center  border  rounded-md shadow-sm  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}
+      className={`
+        ${primaryClass} 
+        ${sizeClass} 
+        font-medium inline-flex items-center  border  rounded-md shadow-sm  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+        ${className}
+        `}
       {...props}
     >
       {icon}
