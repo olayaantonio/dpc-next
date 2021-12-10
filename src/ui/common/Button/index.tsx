@@ -1,32 +1,20 @@
-import React from 'react'
+import { useRef } from 'react'
+import { useButton } from '@react-aria/button'
+import type { AriaButtonProps } from '@react-types/button'
 
-interface ButtonProps {
-  /**
-   * Is this the principal call to action on the page?
-   */
+interface ButtonProps extends AriaButtonProps {
+  /** Is this the principal call to action on the page? */
   primary?: boolean
-  /**
-   * How large should the button be?
-   */
+  /** How large should the button be? */
   size?: 'small' | 'medium' | 'large'
-  /**
-   * Button contents
-   */
-  label: string
-  /**
-   * Optional click handler
-   */
-  onClick?: () => void
-  icon?: React.ReactNode
+
   className?: string
 }
 
 export const Button = ({
   primary = false,
   size = 'medium',
-  label,
-  icon = null,
-  className = '',
+  className,
   ...props
 }: ButtonProps) => {
   const primaryClass = primary
@@ -40,6 +28,9 @@ export const Button = ({
       ? 'px-6 py-3 text-lg'
       : 'px-4 py-2 text-sm'
 
+  const ref = useRef<HTMLButtonElement>(null)
+  const { buttonProps } = useButton(props, ref)
+
   return (
     <button
       type="button"
@@ -49,10 +40,9 @@ export const Button = ({
         font-medium inline-flex items-center  border  rounded-md shadow-sm  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
         ${className}
         `}
-      {...props}
+      {...buttonProps}
     >
-      {icon}
-      {label}
+      {props.children}
     </button>
   )
 }

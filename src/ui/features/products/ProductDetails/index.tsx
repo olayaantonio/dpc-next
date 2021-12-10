@@ -47,7 +47,17 @@ export const ProductDetails = ({ product }: { product: IProduct }) => {
                 </a>
               </div>
             </div>
-            <Button className="mt-10" size="large" primary label="Add to bag" />
+            <Button
+              className="mt-10"
+              size="large"
+              primary
+              onPress={
+                /** @todo Only for testing. Replace with actual functionality. */
+                (e) => console.log(e)
+              }
+            >
+              Add to bag
+            </Button>
           </div>
           <div className="py-10 lg:pt-6 lg:pb-16 lg:col-start-1 lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
             <div>
